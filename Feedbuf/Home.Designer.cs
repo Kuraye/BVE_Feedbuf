@@ -74,7 +74,7 @@
             this.AskFeedbackBttn.Name = "AskFeedbackBttn";
             this.AskFeedbackBttn.Size = new System.Drawing.Size(137, 68);
             this.AskFeedbackBttn.TabIndex = 4;
-            this.AskFeedbackBttn.Text = "Inbox";
+            this.AskFeedbackBttn.Text = "Active Feedback";
             this.AskFeedbackBttn.UseVisualStyleBackColor = true;
             this.AskFeedbackBttn.Click += new System.EventHandler(this.AskFeedbackBttn_Click);
             // 

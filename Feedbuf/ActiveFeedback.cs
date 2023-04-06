@@ -58,6 +58,18 @@ namespace Feedbuf
         private void Inbox_Load(object sender, EventArgs e)
         {
             Reactpanel.Visible = false;
+
+        }
+
+        private void SubtaskDetail_Click(object sender, EventArgs e)
+        {
+            Detailpanel.Visible = true;
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reactpanel.Show();
         }
     }
 }
