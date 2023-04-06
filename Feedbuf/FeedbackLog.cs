@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Feedbuf
 {
-    public partial class Home : Form
+    public partial class FeedbackLog : Form
     {
-        public Home()
+        public FeedbackLog()
         {
             InitializeComponent();
         }
@@ -24,11 +24,6 @@ namespace Feedbuf
             login.Show();
         }
 
-        private void LogoPicBx_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void HomeBttn_Click(object sender, EventArgs e)
         {
             Home home = new Home();
@@ -36,25 +31,18 @@ namespace Feedbuf
             home.Show();
         }
 
-        private void GoalsBttn_Click(object sender, EventArgs e)
+        private void WeeklyGoalsBttn_Click(object sender, EventArgs e)
         {
             WeeklyGoals weekgoal = new WeeklyGoals();
             weekgoal.Show();
             this.Hide();
         }
 
-        private void AskFeedbackBttn_Click(object sender, EventArgs e)
+        private void FeedbackBttn_Click(object sender, EventArgs e)
         {
             Inbox inbox = new Inbox();
             inbox.Show();
             this.Hide();
-        }
-
-        private void FeedbackLogBttn_Click(object sender, EventArgs e)
-        {
-            FeedbackLog feedbacklog = new FeedbackLog();
-            this.Hide();
-            feedbacklog.Show();
         }
     }
 }

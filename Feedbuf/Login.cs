@@ -35,7 +35,7 @@ namespace Feedbuf
                         command.Parameters.AddWithValue("@userName", UserTxtBx.Text);
                         command.Parameters.AddWithValue("@password", PasswordTxtBx.Text);
                         int result = (int)command.ExecuteScalar();
-                                
+
                         if (result > 0)
                         {
                             Home home = new Home();
@@ -57,12 +57,14 @@ namespace Feedbuf
             }
         }
 
-        private void RegisterBttn_Click(object sender, EventArgs e)
+        private void RegisterButton_Click(object sender, EventArgs e)
         {
-
+            Registration registration = new Registration();
+            this.Hide();
+            registration.Show();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void ForgottenLbl_Click(object sender, EventArgs e)
         {
 
         }
