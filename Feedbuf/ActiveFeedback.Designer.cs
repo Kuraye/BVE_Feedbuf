@@ -43,6 +43,7 @@
             this.CloseDetailsBttn = new System.Windows.Forms.Button();
             this.ReactBttn = new System.Windows.Forms.Button();
             this.Reactpanel = new System.Windows.Forms.Panel();
+            this.Detailpanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.SendBttn = new System.Windows.Forms.Button();
             this.ReactRTxtBx = new System.Windows.Forms.RichTextBox();
@@ -185,6 +186,13 @@
             this.Reactpanel.Name = "Reactpanel";
             this.Reactpanel.Size = new System.Drawing.Size(776, 426);
             this.Reactpanel.TabIndex = 13;
+            //
+            // DetailPanel
+            //
+            this.Detailpanel.Location = new System.Drawing.Point(12, 12);
+            this.Detailpanel.Name = "DetailPanel";
+            this.Detailpanel.Size = new System.Drawing.Size(776, 426);
+            this.Detailpanel.TabIndex = 13;
             // 
             // label1
             // 
@@ -259,6 +267,7 @@
         private Button CloseDetailsBttn;
         private Button ReactBttn;
         private Panel Reactpanel;
+        private Panel Detailpanel;
         private Button SendBttn;
         private RichTextBox ReactRTxtBx;
         private Label label1;
