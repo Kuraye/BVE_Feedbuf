@@ -1,6 +1,6 @@
 ﻿namespace Feedbuf
 {
-    partial class Inbox
+    partial class ActiveFeedback
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inbox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActiveFeedback));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HomeBttn = new System.Windows.Forms.Button();
             this.WeeklyGoalBttn = new System.Windows.Forms.Button();

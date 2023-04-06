@@ -48,7 +48,7 @@
             // 
             this.UserTxtBx.Location = new System.Drawing.Point(329, 203);
             this.UserTxtBx.Name = "UserTxtBx";
-            this.UserTxtBx.PlaceholderText = "Email";
+            this.UserTxtBx.PlaceholderText = "Studentnumber";
             this.UserTxtBx.Size = new System.Drawing.Size(169, 27);
             this.UserTxtBx.TabIndex = 0;
             this.UserTxtBx.TextChanged += new System.EventHandler(this.UserTxtBx_TextChanged);
@@ -58,6 +58,7 @@
             this.PasswordTxtBx.Location = new System.Drawing.Point(329, 287);
             this.PasswordTxtBx.Name = "PasswordTxtBx";
             this.PasswordTxtBx.PasswordChar = '*';
+            this.PasswordTxtBx.PlaceholderText = "Password";
             this.PasswordTxtBx.Size = new System.Drawing.Size(169, 27);
             this.PasswordTxtBx.TabIndex = 1;
             this.PasswordTxtBx.TextChanged += new System.EventHandler(this.PasswordTxtBx_TextChanged);

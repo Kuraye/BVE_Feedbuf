@@ -40,7 +40,7 @@ namespace Feedbuf
 
         private void FeedbackBttn_Click(object sender, EventArgs e)
         {
-            Inbox inbox = new Inbox();
+            ActiveFeedback inbox = new ActiveFeedback();
             this.Hide();
             inbox.Show();
         }
@@ -52,7 +52,17 @@ namespace Feedbuf
 
         private void CreateBttn_Click(object sender, EventArgs e)
         {
+            GoalPanel.Visible = true;
+        }
 
+        private void WeeklyGoals_Load(object sender, EventArgs e)
+        {
+            GoalPanel.Visible = false;
+        }
+
+        private void CreateFinishBttn_Click(object sender, EventArgs e)
+        {
+            GoalPanel.Visible = false;
         }
     }
 }

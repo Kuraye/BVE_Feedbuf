@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Feedbuf
 {
-    public partial class Inbox : Form
+    public partial class ActiveFeedback : Form
     {
-        public Inbox()
+        public ActiveFeedback()
         {
             InitializeComponent();
         }

@@ -90,7 +90,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(281, 116);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "E-mail";
+            this.textBox1.PlaceholderText = "Studentnumber";
             this.textBox1.Size = new System.Drawing.Size(176, 27);
             this.textBox1.TabIndex = 5;
             // 

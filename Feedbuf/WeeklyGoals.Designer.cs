@@ -42,7 +42,15 @@
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.DeleteBttn = new System.Windows.Forms.Button();
             this.WeekGoalLbl = new System.Windows.Forms.Label();
+            this.GoalPanel = new System.Windows.Forms.Panel();
+            this.CreateFinishBttn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SubtaskTextBx = new System.Windows.Forms.RichTextBox();
+            this.MaingoalTextBx = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.GoalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // HomeBttn
@@ -81,7 +89,7 @@
             this.FeedbackBttn.Name = "FeedbackBttn";
             this.FeedbackBttn.Size = new System.Drawing.Size(120, 69);
             this.FeedbackBttn.TabIndex = 3;
-            this.FeedbackBttn.Text = "Inbox";
+            this.FeedbackBttn.Text = "Active Feedback";
             this.FeedbackBttn.UseVisualStyleBackColor = true;
             this.FeedbackBttn.Click += new System.EventHandler(this.FeedbackBttn_Click);
             // 
@@ -170,6 +178,72 @@
             this.WeekGoalLbl.TabIndex = 12;
             this.WeekGoalLbl.Text = "Weekly Goals";
             // 
+            // GoalPanel
+            // 
+            this.GoalPanel.Controls.Add(this.CreateFinishBttn);
+            this.GoalPanel.Controls.Add(this.label5);
+            this.GoalPanel.Controls.Add(this.label4);
+            this.GoalPanel.Controls.Add(this.label3);
+            this.GoalPanel.Controls.Add(this.SubtaskTextBx);
+            this.GoalPanel.Controls.Add(this.MaingoalTextBx);
+            this.GoalPanel.Location = new System.Drawing.Point(12, 12);
+            this.GoalPanel.Name = "GoalPanel";
+            this.GoalPanel.Size = new System.Drawing.Size(776, 426);
+            this.GoalPanel.TabIndex = 13;
+            // 
+            // CreateFinishBttn
+            // 
+            this.CreateFinishBttn.Location = new System.Drawing.Point(308, 376);
+            this.CreateFinishBttn.Name = "CreateFinishBttn";
+            this.CreateFinishBttn.Size = new System.Drawing.Size(129, 41);
+            this.CreateFinishBttn.TabIndex = 5;
+            this.CreateFinishBttn.Text = "Create";
+            this.CreateFinishBttn.UseVisualStyleBackColor = true;
+            this.CreateFinishBttn.Click += new System.EventHandler(this.CreateFinishBttn_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(197, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(344, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Please type in the goal you would like to complete";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(284, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Use 1 rule per subtask";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(176, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(385, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Please type in the subtasks needed to complete the goal.";
+            // 
+            // SubtaskTextBx
+            // 
+            this.SubtaskTextBx.Location = new System.Drawing.Point(52, 163);
+            this.SubtaskTextBx.Name = "SubtaskTextBx";
+            this.SubtaskTextBx.Size = new System.Drawing.Size(671, 211);
+            this.SubtaskTextBx.TabIndex = 1;
+            this.SubtaskTextBx.Text = "";
+            // 
+            // MaingoalTextBx
+            // 
+            this.MaingoalTextBx.Location = new System.Drawing.Point(52, 44);
+            this.MaingoalTextBx.Name = "MaingoalTextBx";
+            this.MaingoalTextBx.Size = new System.Drawing.Size(670, 67);
+            this.MaingoalTextBx.TabIndex = 0;
+            this.MaingoalTextBx.Text = "";
+            // 
             // WeeklyGoals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -188,9 +262,13 @@
             this.Controls.Add(this.WeeklyGoalsBttn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HomeBttn);
+            this.Controls.Add(this.GoalPanel);
             this.Name = "WeeklyGoals";
             this.Text = "WeeklyGoals";
+            this.Load += new System.EventHandler(this.WeeklyGoals_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.GoalPanel.ResumeLayout(false);
+            this.GoalPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +289,12 @@
         private RichTextBox richTextBox2;
         private Button DeleteBttn;
         private Label WeekGoalLbl;
+        private Panel GoalPanel;
+        private Button CreateFinishBttn;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private RichTextBox SubtaskTextBx;
+        private RichTextBox MaingoalTextBx;
     }
 }

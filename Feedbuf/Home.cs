@@ -45,7 +45,7 @@ namespace Feedbuf
 
         private void AskFeedbackBttn_Click(object sender, EventArgs e)
         {
-            Inbox inbox = new Inbox();
+            ActiveFeedback inbox = new ActiveFeedback();
             inbox.Show();
             this.Hide();
         }
