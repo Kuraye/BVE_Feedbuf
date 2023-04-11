@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Feedbuf
 {
@@ -26,9 +28,54 @@ namespace Feedbuf
 
         private void RegisterBttn_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            this.Hide();
-            login.Show();
+            string studentNumber = textBox1.Text;
+            string newPassword = textBox2.Text;
+            string newPassword2 = textBox3.Text;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=Feedbuf;Integrated Security=True"))
+                {
+                    string sql = "INSERT INTO Users (Username, Password) VALUES (@username, @password)";
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@username", studentNumber);
+                        command.Parameters.AddWithValue("@password", newPassword);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected == 1)
+                        {
+                            MessageBox.Show("User added successfully!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to add user.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+        }
+        //username
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //field voor wachtwoord
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //repeat wachtwoord
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

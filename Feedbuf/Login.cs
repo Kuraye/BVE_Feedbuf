@@ -26,7 +26,7 @@ namespace Feedbuf
 
             try
             {
-                using (SqlConnection connection = new SqlConnection("Data Source=MSI;Initial Catalog=Feedbuf;Integrated Security=True"))
+                using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=Feedbuf;Integrated Security=True"))
                 {
                     string sql = "SELECT COUNT(*) FROM Users WHERE Username=@userName AND Password=@password";
                     connection.Open();
@@ -66,7 +66,9 @@ namespace Feedbuf
 
         private void ForgottenLbl_Click(object sender, EventArgs e)
         {
-
+            ForgotPassword forgotPassword = new();
+            this.Hide();
+            forgotPassword.Show();
         }
     }
 }

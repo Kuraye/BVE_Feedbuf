@@ -29,249 +29,248 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeeklyGoals));
-            this.HomeBttn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.WeeklyGoalsBttn = new System.Windows.Forms.Button();
-            this.FeedbackBttn = new System.Windows.Forms.Button();
-            this.FeedbackLogBttn = new System.Windows.Forms.Button();
-            this.LogoutBttn = new System.Windows.Forms.Button();
-            this.CreateBttn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.DeleteBttn = new System.Windows.Forms.Button();
-            this.WeekGoalLbl = new System.Windows.Forms.Label();
-            this.GoalPanel = new System.Windows.Forms.Panel();
-            this.CreateFinishBttn = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SubtaskTextBx = new System.Windows.Forms.RichTextBox();
-            this.MaingoalTextBx = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.GoalPanel.SuspendLayout();
-            this.SuspendLayout();
+            HomeBttn = new Button();
+            pictureBox1 = new PictureBox();
+            WeeklyGoalsBttn = new Button();
+            FeedbackBttn = new Button();
+            FeedbackLogBttn = new Button();
+            LogoutBttn = new Button();
+            CreateBttn = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            richTextBox1 = new RichTextBox();
+            richTextBox2 = new RichTextBox();
+            DeleteBttn = new Button();
+            WeekGoalLbl = new Label();
+            GoalPanel = new Panel();
+            CreateFinishBttn = new Button();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            SubtaskTextBx = new RichTextBox();
+            MaingoalTextBx = new RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            GoalPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // HomeBttn
             // 
-            this.HomeBttn.Location = new System.Drawing.Point(131, 26);
-            this.HomeBttn.Name = "HomeBttn";
-            this.HomeBttn.Size = new System.Drawing.Size(146, 69);
-            this.HomeBttn.TabIndex = 0;
-            this.HomeBttn.Text = "Home";
-            this.HomeBttn.UseVisualStyleBackColor = true;
-            this.HomeBttn.Click += new System.EventHandler(this.HomeBttn_Click);
+            HomeBttn.Location = new Point(131, 26);
+            HomeBttn.Name = "HomeBttn";
+            HomeBttn.Size = new Size(146, 69);
+            HomeBttn.TabIndex = 0;
+            HomeBttn.Text = "Home";
+            HomeBttn.UseVisualStyleBackColor = true;
+            HomeBttn.Click += HomeBttn_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 96);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(113, 96);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // WeeklyGoalsBttn
             // 
-            this.WeeklyGoalsBttn.Location = new System.Drawing.Point(283, 26);
-            this.WeeklyGoalsBttn.Name = "WeeklyGoalsBttn";
-            this.WeeklyGoalsBttn.Size = new System.Drawing.Size(129, 69);
-            this.WeeklyGoalsBttn.TabIndex = 2;
-            this.WeeklyGoalsBttn.Text = "Weekly Goals";
-            this.WeeklyGoalsBttn.UseVisualStyleBackColor = true;
-            this.WeeklyGoalsBttn.Click += new System.EventHandler(this.WeeklyGoalsBttn_Click);
+            WeeklyGoalsBttn.Location = new Point(283, 26);
+            WeeklyGoalsBttn.Name = "WeeklyGoalsBttn";
+            WeeklyGoalsBttn.Size = new Size(129, 69);
+            WeeklyGoalsBttn.TabIndex = 2;
+            WeeklyGoalsBttn.Text = "Weekly Goals";
+            WeeklyGoalsBttn.UseVisualStyleBackColor = true;
+            WeeklyGoalsBttn.Click += WeeklyGoalsBttn_Click;
             // 
             // FeedbackBttn
             // 
-            this.FeedbackBttn.Location = new System.Drawing.Point(418, 26);
-            this.FeedbackBttn.Name = "FeedbackBttn";
-            this.FeedbackBttn.Size = new System.Drawing.Size(120, 69);
-            this.FeedbackBttn.TabIndex = 3;
-            this.FeedbackBttn.Text = "Active Feedback";
-            this.FeedbackBttn.UseVisualStyleBackColor = true;
-            this.FeedbackBttn.Click += new System.EventHandler(this.FeedbackBttn_Click);
+            FeedbackBttn.Location = new Point(418, 26);
+            FeedbackBttn.Name = "FeedbackBttn";
+            FeedbackBttn.Size = new Size(120, 69);
+            FeedbackBttn.TabIndex = 3;
+            FeedbackBttn.Text = "Active Feedback";
+            FeedbackBttn.UseVisualStyleBackColor = true;
+            FeedbackBttn.Click += FeedbackBttn_Click;
             // 
             // FeedbackLogBttn
             // 
-            this.FeedbackLogBttn.Location = new System.Drawing.Point(544, 26);
-            this.FeedbackLogBttn.Name = "FeedbackLogBttn";
-            this.FeedbackLogBttn.Size = new System.Drawing.Size(133, 69);
-            this.FeedbackLogBttn.TabIndex = 4;
-            this.FeedbackLogBttn.Text = "Feedback Log";
-            this.FeedbackLogBttn.UseVisualStyleBackColor = true;
-            this.FeedbackLogBttn.Click += new System.EventHandler(this.FeedbackLogBttn_Click);
+            FeedbackLogBttn.Location = new Point(544, 26);
+            FeedbackLogBttn.Name = "FeedbackLogBttn";
+            FeedbackLogBttn.Size = new Size(133, 69);
+            FeedbackLogBttn.TabIndex = 4;
+            FeedbackLogBttn.Text = "Feedback Log";
+            FeedbackLogBttn.UseVisualStyleBackColor = true;
+            FeedbackLogBttn.Click += FeedbackLogBttn_Click;
             // 
             // LogoutBttn
             // 
-            this.LogoutBttn.Location = new System.Drawing.Point(683, 43);
-            this.LogoutBttn.Name = "LogoutBttn";
-            this.LogoutBttn.Size = new System.Drawing.Size(103, 35);
-            this.LogoutBttn.TabIndex = 5;
-            this.LogoutBttn.Text = "Log out";
-            this.LogoutBttn.UseVisualStyleBackColor = true;
-            this.LogoutBttn.Click += new System.EventHandler(this.LogoutBttn_Click);
+            LogoutBttn.Location = new Point(683, 43);
+            LogoutBttn.Name = "LogoutBttn";
+            LogoutBttn.Size = new Size(103, 35);
+            LogoutBttn.TabIndex = 5;
+            LogoutBttn.Text = "Log out";
+            LogoutBttn.UseVisualStyleBackColor = true;
+            LogoutBttn.Click += LogoutBttn_Click;
             // 
             // CreateBttn
             // 
-            this.CreateBttn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateBttn.Location = new System.Drawing.Point(53, 175);
-            this.CreateBttn.Name = "CreateBttn";
-            this.CreateBttn.Size = new System.Drawing.Size(125, 62);
-            this.CreateBttn.TabIndex = 6;
-            this.CreateBttn.Text = "Create";
-            this.CreateBttn.UseVisualStyleBackColor = false;
-            this.CreateBttn.Click += new System.EventHandler(this.CreateBttn_Click);
+            CreateBttn.BackColor = SystemColors.ButtonHighlight;
+            CreateBttn.Location = new Point(53, 175);
+            CreateBttn.Name = "CreateBttn";
+            CreateBttn.Size = new Size(125, 62);
+            CreateBttn.TabIndex = 6;
+            CreateBttn.Text = "Create";
+            CreateBttn.UseVisualStyleBackColor = false;
+            CreateBttn.Click += CreateBttn_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(442, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Main goal";
+            label1.AutoSize = true;
+            label1.Location = new Point(442, 126);
+            label1.Name = "label1";
+            label1.Size = new Size(76, 20);
+            label1.TabIndex = 7;
+            label1.Text = "Main goal";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(448, 253);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Sub tasks";
+            label2.AutoSize = true;
+            label2.Location = new Point(448, 253);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Sub tasks";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(273, 276);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(404, 153);
-            this.richTextBox1.TabIndex = 9;
-            this.richTextBox1.Text = "";
+            richTextBox1.Location = new Point(273, 276);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(404, 153);
+            richTextBox1.TabIndex = 9;
+            richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(273, 149);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(404, 88);
-            this.richTextBox2.TabIndex = 10;
-            this.richTextBox2.Text = "";
+            richTextBox2.Location = new Point(273, 149);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.Size = new Size(404, 88);
+            richTextBox2.TabIndex = 10;
+            richTextBox2.Text = "";
             // 
             // DeleteBttn
             // 
-            this.DeleteBttn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DeleteBttn.Location = new System.Drawing.Point(53, 296);
-            this.DeleteBttn.Name = "DeleteBttn";
-            this.DeleteBttn.Size = new System.Drawing.Size(125, 63);
-            this.DeleteBttn.TabIndex = 11;
-            this.DeleteBttn.Text = "Delete";
-            this.DeleteBttn.UseVisualStyleBackColor = false;
+            DeleteBttn.BackColor = SystemColors.ButtonHighlight;
+            DeleteBttn.Location = new Point(53, 296);
+            DeleteBttn.Name = "DeleteBttn";
+            DeleteBttn.Size = new Size(125, 63);
+            DeleteBttn.TabIndex = 11;
+            DeleteBttn.Text = "Delete";
+            DeleteBttn.UseVisualStyleBackColor = false;
             // 
             // WeekGoalLbl
             // 
-            this.WeekGoalLbl.AutoSize = true;
-            this.WeekGoalLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WeekGoalLbl.Location = new System.Drawing.Point(53, 126);
-            this.WeekGoalLbl.Name = "WeekGoalLbl";
-            this.WeekGoalLbl.Size = new System.Drawing.Size(129, 28);
-            this.WeekGoalLbl.TabIndex = 12;
-            this.WeekGoalLbl.Text = "Weekly Goals";
+            WeekGoalLbl.AutoSize = true;
+            WeekGoalLbl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            WeekGoalLbl.Location = new Point(53, 126);
+            WeekGoalLbl.Name = "WeekGoalLbl";
+            WeekGoalLbl.Size = new Size(129, 28);
+            WeekGoalLbl.TabIndex = 12;
+            WeekGoalLbl.Text = "Weekly Goals";
             // 
             // GoalPanel
             // 
-            this.GoalPanel.Controls.Add(this.CreateFinishBttn);
-            this.GoalPanel.Controls.Add(this.label5);
-            this.GoalPanel.Controls.Add(this.label4);
-            this.GoalPanel.Controls.Add(this.label3);
-            this.GoalPanel.Controls.Add(this.SubtaskTextBx);
-            this.GoalPanel.Controls.Add(this.MaingoalTextBx);
-            this.GoalPanel.Location = new System.Drawing.Point(12, 12);
-            this.GoalPanel.Name = "GoalPanel";
-            this.GoalPanel.Size = new System.Drawing.Size(776, 426);
-            this.GoalPanel.TabIndex = 13;
+            GoalPanel.Controls.Add(CreateFinishBttn);
+            GoalPanel.Controls.Add(label5);
+            GoalPanel.Controls.Add(label4);
+            GoalPanel.Controls.Add(label3);
+            GoalPanel.Controls.Add(SubtaskTextBx);
+            GoalPanel.Controls.Add(MaingoalTextBx);
+            GoalPanel.Location = new Point(10, 12);
+            GoalPanel.Name = "GoalPanel";
+            GoalPanel.Size = new Size(776, 426);
+            GoalPanel.TabIndex = 13;
             // 
             // CreateFinishBttn
             // 
-            this.CreateFinishBttn.Location = new System.Drawing.Point(308, 376);
-            this.CreateFinishBttn.Name = "CreateFinishBttn";
-            this.CreateFinishBttn.Size = new System.Drawing.Size(129, 41);
-            this.CreateFinishBttn.TabIndex = 5;
-            this.CreateFinishBttn.Text = "Create";
-            this.CreateFinishBttn.UseVisualStyleBackColor = true;
-            this.CreateFinishBttn.Click += new System.EventHandler(this.CreateFinishBttn_Click);
+            CreateFinishBttn.Location = new Point(308, 376);
+            CreateFinishBttn.Name = "CreateFinishBttn";
+            CreateFinishBttn.Size = new Size(129, 41);
+            CreateFinishBttn.TabIndex = 5;
+            CreateFinishBttn.Text = "Create";
+            CreateFinishBttn.UseVisualStyleBackColor = true;
+            CreateFinishBttn.Click += CreateFinishBttn_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(197, 14);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(344, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Please type in the goal you would like to complete";
+            label5.AutoSize = true;
+            label5.Location = new Point(197, 14);
+            label5.Name = "label5";
+            label5.Size = new Size(344, 20);
+            label5.TabIndex = 4;
+            label5.Text = "Please type in the goal you would like to complete";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(284, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Use 1 rule per subtask";
+            label4.AutoSize = true;
+            label4.Location = new Point(284, 142);
+            label4.Name = "label4";
+            label4.Size = new Size(153, 20);
+            label4.TabIndex = 3;
+            label4.Text = "Use 1 rule per subtask";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(176, 122);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(385, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Please type in the subtasks needed to complete the goal.";
+            label3.AutoSize = true;
+            label3.Location = new Point(176, 122);
+            label3.Name = "label3";
+            label3.Size = new Size(385, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Please type in the subtasks needed to complete the goal.";
             // 
             // SubtaskTextBx
             // 
-            this.SubtaskTextBx.Location = new System.Drawing.Point(52, 163);
-            this.SubtaskTextBx.Name = "SubtaskTextBx";
-            this.SubtaskTextBx.Size = new System.Drawing.Size(671, 211);
-            this.SubtaskTextBx.TabIndex = 1;
-            this.SubtaskTextBx.Text = "";
+            SubtaskTextBx.Location = new Point(52, 163);
+            SubtaskTextBx.Name = "SubtaskTextBx";
+            SubtaskTextBx.Size = new Size(671, 211);
+            SubtaskTextBx.TabIndex = 1;
+            SubtaskTextBx.Text = "";
             // 
             // MaingoalTextBx
             // 
-            this.MaingoalTextBx.Location = new System.Drawing.Point(52, 44);
-            this.MaingoalTextBx.Name = "MaingoalTextBx";
-            this.MaingoalTextBx.Size = new System.Drawing.Size(670, 67);
-            this.MaingoalTextBx.TabIndex = 0;
-            this.MaingoalTextBx.Text = "";
+            MaingoalTextBx.Location = new Point(52, 44);
+            MaingoalTextBx.Name = "MaingoalTextBx";
+            MaingoalTextBx.Size = new Size(670, 67);
+            MaingoalTextBx.TabIndex = 0;
+            MaingoalTextBx.Text = "";
             // 
             // WeeklyGoals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.WeekGoalLbl);
-            this.Controls.Add(this.DeleteBttn);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.CreateBttn);
-            this.Controls.Add(this.LogoutBttn);
-            this.Controls.Add(this.FeedbackLogBttn);
-            this.Controls.Add(this.FeedbackBttn);
-            this.Controls.Add(this.WeeklyGoalsBttn);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.HomeBttn);
-            this.Controls.Add(this.GoalPanel);
-            this.Name = "WeeklyGoals";
-            this.Text = "WeeklyGoals";
-            this.Load += new System.EventHandler(this.WeeklyGoals_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.GoalPanel.ResumeLayout(false);
-            this.GoalPanel.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(GoalPanel);
+            Controls.Add(richTextBox2);
+            Controls.Add(WeekGoalLbl);
+            Controls.Add(DeleteBttn);
+            Controls.Add(richTextBox1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(CreateBttn);
+            Controls.Add(LogoutBttn);
+            Controls.Add(FeedbackLogBttn);
+            Controls.Add(FeedbackBttn);
+            Controls.Add(WeeklyGoalsBttn);
+            Controls.Add(pictureBox1);
+            Controls.Add(HomeBttn);
+            Name = "WeeklyGoals";
+            Text = "WeeklyGoals";
+            Load += WeeklyGoals_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            GoalPanel.ResumeLayout(false);
+            GoalPanel.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
